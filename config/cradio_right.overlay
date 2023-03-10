@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "cradio.dtsi"
+
+&default_transform {
+	col-offset = <17>;
+};
+
 /*  The Mechboards UK board has some pin layout changes.
     Since they only provide a QMK firmware, we try to
     map the changes from the QMK firmware to ZMK.
