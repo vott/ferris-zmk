@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_PEROSWEEP1_LEFT
-	def_bool $(shields_list_contains,perosweep_left)
+	def_bool $(shields_list_contains,perosweep1_left)
 
 config SHIELD_PEROSWEEP1_RIGHT
-	def_bool $(shields_list_contains,perosweep_right)
+	def_bool $(shields_list_contains,perosweep1_right)
