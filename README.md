@@ -13,31 +13,31 @@ a custom shield is needed (see `config/boards/shields/`).
 
     "       ,       .       p       y           f       g       c       r       l
     a       o ALT   e CTRL  u GUI   i           d       h GUI   t CTRL  n ALT   s
-    :       q       j       k       x           b       m       w       v       z
+            q       j       k       x           b       m       w       v       z
 
-            ESC MEH         SPACE               SHIFT           NUM_LAYER
+            ARROW_LAYER   SPACE / MEH           SHIFT           NUM_LAYER
 
 ### Num layer:
 
     '       _       &       {       }           ?       7       8       9       BACKSPACE
-    TAB     -       =       (       )           !       4       5       6     
-    ;       @       |       [       ]           0       1       2       3
+    +       -       =       (       )           !       4       5       6       ENTER     
+            @       |       [       ]           0       1       2       3
 
-            ARROW_LAYER     ENTER               CAPS_WORD     
+                            TAB                 CAPS_WORD       ARROW_LAYER 
 
 ### Arrow layer:
 
-    `       %       #       <       >                                           DEL 
-    S+TAB   +       =       $       ^           LEFT    DOWN    UP      RIGHT
-                    \       /       ~
+    ESC     %       #       <       >           :               PG_DN   PG_UP   DEL 
+    S+TAB   /       *       $       ^           ;       LEFT    DOWN    UP      RIGHT
+            \       ~       `                           A+LEFT                  A+RIGHT 
 
-                                                                F_KEY_LAYER
+            NUM_LAYER                                           F_KEY_LAYER
 
 ### F-key layer:
 
-            VOL+    >>|                         F12     F7      F8      F9    
-            VOL-    |<<                         F11     F4      F5      F6
-            MUTE    PLAY                        F10     F1      F2      F3
+     >>|    |<<     PLAY                        F12     F7      F8      F9    
+     VOL+   VOL-    MUTE                        F11     F4      F5      F6
+                                                F10     F1      F2      F3
 
                             SYSTEM_LAYER
 
@@ -52,6 +52,9 @@ a custom shield is needed (see `config/boards/shields/`).
 
 - The left thumb feels a bit overused because of layer switching.
 
+- Typing numbers is a bit awkward because the the layer-switch 
+  thumb key is on the same side.
+
 ## The ideas behind the layout
 
 This is a general-purpose Dvorak layout featuring:
@@ -65,22 +68,6 @@ which messes up the flow.
 
 That's why this layout only uses SHIFT for alpha keys. (Technically, you can 
 use SHIFT on any key, and it will work, but you don't have to and should not.)
-
-
-### Consistent layer switching
-
-There is only one way to switch to a layer: using a 
-[sticky layer key](https://zmk.dev/docs/behaviors/sticky-layer) on the right
-thumb key on the base layer. 
-From there, you can switch to the third layer using the *left* thumb key. 
-Then, you go to the fourth layer with the *right* thumb key. 
-
-To press the arrow-up key, for example, you press: `right thumb  left thumb  t` 
-
-Hold the last layer-switch key to type multiple keys on that layer.
-
-The reasoning for this is the same as for the shifted keys: reducing the 
-amount of confusion. 
 
 
 ### Home row mods (ALT, CONTROL, GUI)
