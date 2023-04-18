@@ -8,6 +8,15 @@
 #define FKEYS   3 
 #define SYSTEM  4 
 
+&mt {
+    // We use this for the MEH-key only.
+    // Higher timeouts are required to prevent misfiring.
+    tapping-term-ms = <230>;
+    quick_tap_ms = <180>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+};
+
 &sl {
     release-after-ms = <500>;
 };
