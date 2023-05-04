@@ -11,7 +11,7 @@ a custom shield is needed (see `config/boards/shields/`).
 
 ### Base layer:
 
-    "       ,       .       p       y           f       g       c       r       l
+    '       ,       .       p       y           f       g       c       r       l
     a ALT   o GUI   e SHIFT u CTRL  i           d       h CTRL  t SHIFT n GUI   s ALT
     :       q       j       k       x           b       m       w       v       z
 
@@ -19,7 +19,7 @@ a custom shield is needed (see `config/boards/shields/`).
 
 ### Num layer:
 
-    '       _       &       {       }                   7       8       9       BACKSPACE
+    "       _       &       {       }                   7       8       9       BACKSPACE
     +       -       =       (       )           0       4       5       6       ENTER     
     ;       @       |       [       ]                   1       2       3
 
@@ -82,8 +82,7 @@ of modifiers and keys. I've been there. :-)
 
 ### Deviation from standard Dvorak
 
-Because I type double quotes much more often then single quotes and colon much more often than
-semicolon (VIM user here :-) ), I switched those keys.
+Because I type colon much more often than semicolon (VIM user here :-) ), I switched those keys.
 
 ## How to type certain symbols
 
