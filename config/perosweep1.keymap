@@ -51,7 +51,7 @@
         alpha {
         bindings = <
 
-        &kp SQT       &kp COMMA   &kp DOT       &kp P        &kp Y      &kp F  &kp G        &kp C         &kp R       &kp L
+        &kp DQT       &kp COMMA   &kp DOT       &kp P        &kp Y      &kp F  &kp G        &kp C         &kp R       &kp L
         &lm LALT A    &lm LGUI O  &lm LSHIFT E  &lm LCTRL U  &kp I      &kp D  &rm RCTRL H  &rm RSHIFT T  &rm RGUI N  &rm RALT S 
         &kp COLON     &kp Q       &kp J         &kp K        &kp X      &kp B  &kp M        &kp W         &kp V       &kp Z
 
@@ -64,7 +64,7 @@
         num_and_signs {
         bindings = <
 
-        &kp DQT   &kp UNDER  &kp AMPS   &kp LBRC  &kp RBRC     &none   &kp N7  &kp N8  &kp N9  &kp BKSP
+        &kp SQT   &kp UNDER  &kp AMPS   &kp LBRC  &kp RBRC     &none   &kp N7  &kp N8  &kp N9  &kp BKSP
         &kp PLUS  &kp MINUS  &kp EQUAL  &kp LPAR  &kp RPAR     &kp N0  &kp N4  &kp N5  &kp N6  &kp ENTER
         &kp SEMI  &kp AT     &kp PIPE   &kp LBKT  &kp RBKT     &none   &kp N1  &kp N2  &kp N3  &none
 
