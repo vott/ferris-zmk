@@ -57,8 +57,24 @@ def flash(side: str):
     )
 
 
-def init():
+def setup():
+    """ Setup a local development environment.
+        https://zmk.dev/docs/development/setup
+    """
+    if os.path.exists("build"):
+        raise FileExistsError("`build` already exists")
+    os.mkdir("build")
+    subprocess.run(
+        [
+            "git",
+            "clone",
+            "https://github.com/zmkfirmware/zmk.git",
+            "build/zmk",
+        ],
+        check=True,
+    )
     west("west init -l app/")
+    west("west update")
 
 
 parser = argparse.ArgumentParser(
@@ -71,6 +87,7 @@ build_parser.add_argument("--pristine", action="store_true")
 build_parser.add_argument("--right", action="store_true")
 build_parser.add_argument("--left", action="store_true")
 subparsers.add_parser("reset")
+subparsers.add_parser("setup")
 flash_parser = subparsers.add_parser("flash")
 flash_parser.add_argument("side", choices=["left", "right"])
 
@@ -84,3 +101,5 @@ if args.command == "reset":
     reset()
 if args.command == "flash":
     flash(args.side)
+if args.command == "setup":
+    setup()
