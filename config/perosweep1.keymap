@@ -9,8 +9,8 @@
 #define SYSTEM  4 
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LGUI k2  &ht LSHIFT k3  &ht LCTRL k4
-#define HRMR(k1,k2,k3,k4) &ht RCTRL k1  &ht RSHIFT k2  &ht RGUI k3  &ht RALT k4
+#define HRML(k1,k2,k3,k4) &mt LALT k1  &mt LGUI k2  &mt LSHIFT k3  &mt LCTRL k4
+#define HRMR(k1,k2,k3,k4) &mt RCTRL k1  &mt RSHIFT k2  &mt RGUI k3  &mt RALT k4
 
 &mt {
     // We use this for the MEH-key only.
